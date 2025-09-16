@@ -10,19 +10,19 @@ function App() {
       <Person></Person>
       <Sports></Sports>
       <Person></Person> */}
-      <Sports></Sports>
+      {/* <Sports></Sports>
       <Sports></Sports>
       
       <Car></Car>
 
       <Students name = "Shahil" dept = 'CSE'></Students>
       <Students name = "Mishu" dept = "EEE"></Students>
-      <Students name = "Shishu" dept = "English" ></Students>
+      <Students name = "Shishu" dept = "English" ></Students> */}
         {/* with props here data can be added dynamically */}
-
+{/* 
       <Person></Person>
 
-      <Player name = "Tamim" run = "5000"></Player>
+      <Player name = "Tamim" run = "5000"></Player> */}
       {/* data added by destructuring method */}
       
     </>
