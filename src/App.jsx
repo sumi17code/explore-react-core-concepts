@@ -2,22 +2,46 @@
 import './App.css'
 import Todo from './Todo.jsx'
 import Food from  './food.jsx'
+import Actor from './Actor.jsx'
+import Singer from './Singer.jsx'
 
 
 
 
 function App() {
 
-  const time = 50;
+   const Actors = ['Bappa Raj', 'Salma Sha', 'Omar Sani', 'jashim', 'anwar'];
+
+   const singers = [
+    {id: 1, name: 'Mahfuz', age: 68, song: 40},
+    {id: 2, name: 'Tasan', age: 48, song: 34},
+    {id: 3, name: 'Alo', age: 62, song: 12},
+    {id: 4, name: 'Salim', age: 34, song: 25}
+   ]
+
+
+  // const time = 50;
    return (
     <>
    
       <h1>React Core Concepts</h1>
-      <Todo task = 'Learn React' 
+
+      {
+        singers.map(singer => <Singer key={singer.id} singer = {singer}></Singer>)
+      }
+
+   
+    {/* {
+      Actors.map(actor => <Actor actor = {actor}></Actor>)
+    } */}
+
+
+
+      {/* <Todo task = 'Learn React' 
         isDone = {true} time = {time}>
       </Todo>
       <Todo task = 'Learn JS' isDone = {true} ></Todo>
-      <Todo task = 'Take a shower' isDone = {false} time =""></Todo>
+      <Todo task = 'Take a shower' isDone = {false} time =""></Todo> */}
 {/* 
       <Food name = 'Luci-Parota' isEat = {true}></Food>
       <Food name = 'Fuchka' isEat = {false}></Food> */}

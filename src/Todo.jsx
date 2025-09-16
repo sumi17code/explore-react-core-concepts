@@ -72,13 +72,29 @@
 
 // conditional rendering : 6 use variable
 
+// export default function Todo ({task, isDone, time}) {
+//     const displayTime = time ? time : 100;
+//     let listItem;
+
+//     if (isDone === true){
+//          return(
+//         listItem = <li style={{color: 'red', listStyle: 'none'}}>Task : {task} time : {displayTime}</li>
+//     )
+//     }
+//     else{
+        
+//             listItem = <li style={{color: 'red', listStyle: 'none'}}>Pending: {task}</li>
+        
+//     }
+//     return listItem;
+// }
 export default function Todo ({task, isDone, time}) {
-    const displayTime = time ? time : 100;
+    // const displayTime = time ? time : 100;
     let listItem;
 
     if (isDone === true){
          return(
-        listItem = <li style={{color: 'red', listStyle: 'none'}}>Task : {task} time : {displayTime}</li>
+        listItem = <li style={{color: 'red', listStyle: 'none'}}>Task : {task} , time : {time ? 'I am done' : 'not done yet'}</li>
     )
     }
     else{
