@@ -1,11 +1,14 @@
 
 import './App.css'
+import Todo from './Todo.jsx'
 
 function App() {
    return (
     <>
    
       <h1>React Core Concepts</h1>
+      <Todo></Todo>
+
       {/* <Person></Person>
       <Person></Person>
       <Sports></Sports>
@@ -19,7 +22,7 @@ function App() {
       <Students name = "Mishu" dept = "EEE"></Students>
       <Students name = "Shishu" dept = "English" ></Students> */}
         {/* with props here data can be added dynamically */}
-{/* 
+    {/* 
       <Person></Person>
 
       <Player name = "Tamim" run = "5000"></Player> */}
