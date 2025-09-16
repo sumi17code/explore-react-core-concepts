@@ -23,6 +23,7 @@ function App() {
       <Person></Person>
 
       <Player name = "Tamim" run = "5000"></Player>
+      {/* data added by destructuring method */}
       
     </>
   )
@@ -104,5 +105,6 @@ function Player ({name, run}) {
     </div>
   )
 }
+// data can be passed like this also. its called destructuring.
 
 export default App
