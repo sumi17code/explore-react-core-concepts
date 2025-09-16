@@ -1,21 +1,26 @@
 
 import './App.css'
 import Todo from './Todo.jsx'
+import Food from  './food.jsx'
+
 
 function App() {
 
-  const time = 20;
+  // const time = 20;
    return (
     <>
    
       <h1>React Core Concepts</h1>
-      <Todo task = 'Learn React' 
+      {/* <Todo task = 'Learn React' 
         isDone = {true} 
         time = {time}>
 
       </Todo>
       <Todo task = 'Learn JS' isDone = {false}></Todo>
-      <Todo task = 'Take a shower' isDone = {true}></Todo>
+      <Todo task = 'Take a shower' isDone = {true}></Todo> */}
+
+      <Food name = 'Luci-Parota' isEat = {true}></Food>
+      <Food name = 'Fuchka' isEat = {false}></Food>
 
       {/* <Person></Person>
       <Person></Person>
