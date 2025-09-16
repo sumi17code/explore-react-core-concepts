@@ -1,8 +1,8 @@
 
-export default function Todo () {
+export default function Todo ({task, isDone}) {
 
     return (
-        <li>Task</li>
+        <li style={{color: 'red', listStyle: 'none'}}>Task : {task} {isDone}</li>
     )
 }
 
