@@ -9,25 +9,36 @@ function App() {
       {/* <Person></Person>
       <Person></Person>
       <Sports></Sports>
-      <Person></Person>
+      <Person></Person> */}
       <Sports></Sports>
-      <Sports></Sports> */}
+      <Sports></Sports>
       
       <Car></Car>
 
-      <Students></Students>
-      <Students></Students>
+      <Students name = "Shahil" dept = 'CSE'></Students>
+      <Students name = "Mishu" dept = "EEE"></Students>
+      <Students name = "Shishu" dept = "English" ></Students>
+        {/* with props here data can be added dynamically */}
+
       <Person></Person>
+
+      <Player name = "Tamim" run = "5000"></Player>
       
     </>
   )
 }
 
-function Students () {
+function Students (Props) {
+  console.log(Props)
+  // Props is an object. Props is ready only. we can not change props value. with this we can pass data from one component to another component.
+
   return (
     <div className='student'>
-      <h2>Name: </h2>
-      <h2>Dept: </h2>
+
+    {/* here style added from external css file */}
+
+      <h2>Name: {Props.name} </h2>
+      <h2>Dept: {Props.dept}</h2>
     </div>
 
   )
@@ -50,6 +61,8 @@ function Person() {
     padding : '20px'
   
   }
+  // style can be added like this also.
+
   return(
     <p style={personStyle}>I am a Person: {name} {age}</p>
   )
@@ -57,7 +70,10 @@ function Person() {
 
 function Car() {
   return (
-    <div style={{ border: '2px dashed blue', margin: '10px', padding: '20px', borderRadius: '15px', textAlign: 'center'}}>
+    <div style={{ border: '2px dashed blue', margin: '10px', padding: '20px', borderRadius: '15px', textAlign: 'center'}}>    
+
+      {/* style can be added like this */}
+
       <h2>Toyota</h2>
       <p>My Car is good</p>
       <p>A car, or automobile, is a wheeled motor vehicle designed to <br /> primarily transport people on roads, typically <br /> seating one to eight people and having four wheels.</p>
@@ -75,6 +91,16 @@ function Sports () {
         <li>Kabi</li>
         <li>Rohit</li>
       </ul>
+    </div>
+  )
+}
+
+
+function Player ({name, run}) {
+  return (
+    <div className='student'>
+      <h4>Name : {name}</h4>
+      <p>Total run : {run}</p>
     </div>
   )
 }
