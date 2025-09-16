@@ -3,11 +3,17 @@ import './App.css'
 import Todo from './Todo.jsx'
 
 function App() {
+
+  const time = 20;
    return (
     <>
    
       <h1>React Core Concepts</h1>
-      <Todo task = 'Learn React' isDone = {true}></Todo>
+      <Todo task = 'Learn React' 
+        isDone = {true} 
+        time = {time}>
+
+      </Todo>
       <Todo task = 'Learn JS' isDone = {false}></Todo>
       <Todo task = 'Take a shower' isDone = {true}></Todo>
 
