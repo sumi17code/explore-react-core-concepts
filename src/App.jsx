@@ -4,13 +4,17 @@ import Todo from './Todo.jsx'
 import Food from  './food.jsx'
 import Actor from './Actor.jsx'
 import Singer from './Singer.jsx'
+import Library from './Library.jsx'
+
 
 
 
 
 function App() {
 
-   const Actors = ['Bappa Raj', 'Salma Sha', 'Omar Sani', 'jashim', 'anwar'];
+
+
+  //  const Actors = ['Bappa Raj', 'Salma Sha', 'Omar Sani', 'jashim', 'anwar'];
 
    const singers = [
     {id: 1, name: 'Mahfuz', age: 68, song: 40},
@@ -19,6 +23,12 @@ function App() {
     {id: 4, name: 'Salim', age: 34, song: 25}
    ]
 
+   const books = [
+    {id: 1, name: 'Physics', price: 390},
+    {id: 2, name: 'Biology', price: 300},
+    {id: 3, name: 'Chemistry', price: 370},
+    {id: 4, name: 'Math', price: 360},
+   ]
 
   // const time = 50;
    return (
@@ -26,11 +36,15 @@ function App() {
    
       <h1>React Core Concepts</h1>
 
+      <Library books = {books}></Library>
+
       {
         singers.map(singer => <Singer key={singer.id} singer = {singer}></Singer>)
       }
 
-   
+      
+
+
     {/* {
       Actors.map(actor => <Actor actor = {actor}></Actor>)
     } */}
