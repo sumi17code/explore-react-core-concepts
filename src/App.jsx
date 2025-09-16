@@ -11,11 +11,13 @@ function App() {
       <Sports></Sports>
       <Person></Person>
       <Sports></Sports>
-      <Sports></Sports>
+      <Sports></Sports> */}
       
-      <Car></Car> */}
+      <Car></Car>
 
       <Students></Students>
+      <Students></Students>
+      <Person></Person>
       
     </>
   )
@@ -33,17 +35,29 @@ function Students () {
 
 
 function Person() {
-  console.log()
+  
+
+ 
   const age = 20;
   const name = 'Shahil';
+
+   const personStyle = {
+    border : '2px solid red',
+    margin : '10px',
+    borderRadius : '15px',
+    textAlign : 'center',
+    color : 'blue',
+    padding : '20px'
+  
+  }
   return(
-    <p>I am a Person: {name} {age}</p>
+    <p style={personStyle}>I am a Person: {name} {age}</p>
   )
 }
 
 function Car() {
   return (
-    <div>
+    <div style={{ border: '2px dashed blue', margin: '10px', padding: '20px', borderRadius: '15px', textAlign: 'center'}}>
       <h2>Toyota</h2>
       <p>My Car is good</p>
       <p>A car, or automobile, is a wheeled motor vehicle designed to <br /> primarily transport people on roads, typically <br /> seating one to eight people and having four wheels.</p>
